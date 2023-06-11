@@ -1,0 +1,33 @@
+Front-End:
+resto-project is the name of vue project main full front-end
+!! note that inside "resto-project" is folder called "project-name" -> that is an laravel php back-end .. "composer" !!
+
+
+Back-End:
+main back-end that folder has  "authorWebsite" -> full back-end spring boot project
+
+
+main swagger: 
+To test API 
+
+
+database:
+PostgreSQL 
+
+important tool to run project :
+
+IntelliJ IDEA Community Edition -> to run autherWebsite project back-end
+
+Docker -> to run container & images
+
+Visual Studio code  -> to run front-end server
+
+Git Bash -> to run laravel php server
+
+
+
+
+
+
+
+  
