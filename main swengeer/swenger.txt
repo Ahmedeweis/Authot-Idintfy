@@ -1,0 +1,15 @@
+http://localhost:8888/swagger-ui.html
+
+
+
+server.port=8888
+spring.datasource.url=jdbc:postgresql://localhost:5432/authorDatabase
+spring.datasource.username=postgres
+spring.datasource.password=12345
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.show-sql=true
+
+
+npm run serve
+
+php artisan serve

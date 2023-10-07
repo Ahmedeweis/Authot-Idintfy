@@ -1,0 +1,24 @@
+
+
+CREATE OR REPLACE FUNCTION update_number_of_articles()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF TG_OP = 'INSERT' THEN
+        UPDATE authors
+        SET number_of_articles = number_of_articles + 1
+        WHERE id = NEW.author_id;
+    ELSIF TG_OP = 'DELETE' THEN
+        UPDATE authors
+        SET number_of_articles = number_of_articles - 1
+        WHERE id = OLD.author_id;
+    END IF;
+    RETURN NULL; -- For 'AFTER' triggers, we don't modify the operation, so we return NULL
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE TRIGGER after_insert_or_delete_articles
+AFTER INSERT OR DELETE
+ON articles
+FOR EACH ROW
+EXECUTE FUNCTION update_number_of_articles();
