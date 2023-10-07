@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.authorWebsite.AuthorWebsiteApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.613 s - in com.example.authorWebsite.AuthorWebsiteApplicationTests
